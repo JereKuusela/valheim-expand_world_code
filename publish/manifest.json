@@ -1,0 +1,10 @@
+{
+  "name": "Expand_World_Code",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/JereKuusela/valheim-expand_world_code",
+  "description": "Allows adding custom functions that can be executed by Expand World Prefabs.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2202",
+    "JereKuusela-Expand_World_Prefabs-1.27.0"
+  ]
+}
