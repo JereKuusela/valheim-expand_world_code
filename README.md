@@ -28,12 +28,12 @@ Then this function can be used in the yaml files by writing `<Sum_1_2>` which wi
 
 ## Persistent data
 
-Expand World Prefabs provides CodeLoading class to store data between game sessions, with following functions:
+Expand World Prefabs provides a CodeLoading class to store data between game sessions, with following functions:
 
 - SetBool, SetFloat, SetInt, SetLong, SetString
 - GetBool, GetFloat, GetInt, GetLong, GetString
 
-All data is saved as key-value pairs in the `config/expand_world/saved_data.yaml` file.
+All data is saved as key-value pairs in the `config/expand_world/ewp_data.yaml` file.
 
 All data is saved as text with automatic conversion to the correct type.
 
