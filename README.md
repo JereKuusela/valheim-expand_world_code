@@ -130,4 +130,5 @@ public class EventDisabler
 Thanks for Azumatt for creating the mod icon!
 
 Sources: [GitHub](https://github.com/JereKuusela/valheim-expand_world_code)
+
 Donations: [Buy me a computer](https://www.buymeacoffee.com/jerekuusela)
