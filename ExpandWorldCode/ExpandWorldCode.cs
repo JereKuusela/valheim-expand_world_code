@@ -5,11 +5,12 @@ using HarmonyLib;
 using Service;
 namespace ExpandWorld.Code;
 [BepInPlugin(GUID, NAME, VERSION)]
+[BepInDependency("expand_world_prefabs", "1.34")]
 public class EWP : BaseUnityPlugin
 {
   public const string GUID = "expand_world_code";
   public const string NAME = "Expand World Code";
-  public const string VERSION = "1.0";
+  public const string VERSION = "1.1";
 #nullable disable
   public static Harmony Harmony;
 #nullable enable
@@ -22,7 +23,6 @@ public class EWP : BaseUnityPlugin
     try
     {
       CodeLoading.SetupWatcher();
-      SavedData.SetupWatcher();
     }
     catch (Exception e)
     {
@@ -30,10 +30,5 @@ public class EWP : BaseUnityPlugin
     }
     Parameters.ExecuteCode = CodeLoading.Execute;
     Parameters.ExecuteCodeWithValue = CodeLoading.Execute;
-  }
-  public void LateUpdate()
-  {
-    if (ZNet.instance == null) return;
-    SavedData.SaveSavedData();
   }
 }
