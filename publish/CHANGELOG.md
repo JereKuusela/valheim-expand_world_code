@@ -1,3 +1,6 @@
+- v1.3
+  - Fixed error with dynamic assemblies. Thanks Kurios.ZeuS!
+
 - v1.2
   - Fixed for latest EWP version.
 
