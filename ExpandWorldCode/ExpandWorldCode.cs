@@ -6,7 +6,7 @@ using Service;
 namespace ExpandWorld.Code;
 
 [BepInPlugin(GUID, NAME, VERSION)]
-[BepInDependency("expand_world_prefabs", "1.49")]
+[BepInDependency("expand_world_prefabs", "1.56")]
 public class EWP : BaseUnityPlugin
 {
   public const string GUID = "expand_world_code";
@@ -29,7 +29,7 @@ public class EWP : BaseUnityPlugin
     {
       Log.Error(e.StackTrace);
     }
-    Parameters.ExecuteCode = CodeLoading.Execute;
-    Parameters.ExecuteCodeWithValue = CodeLoading.Execute;
+    Functions.ExecuteCode = CodeLoading.Execute;
+    Functions.ExecuteCodeWithValue = CodeLoading.Execute;
   }
 }
