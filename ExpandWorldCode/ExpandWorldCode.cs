@@ -11,7 +11,7 @@ public class EWP : BaseUnityPlugin
 {
   public const string GUID = "expand_world_code";
   public const string NAME = "Expand World Code";
-  public const string VERSION = "1.3";
+  public const string VERSION = "1.4";
 #nullable disable
   public static Harmony Harmony;
 #nullable enable

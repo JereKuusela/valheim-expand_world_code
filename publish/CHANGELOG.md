@@ -1,3 +1,6 @@
+- v1.4
+  - Fixed for the new game update. Thanks Zeall!
+
 - v1.3
   - Fixed error with dynamic assemblies. Thanks Kurios.ZeuS!
 

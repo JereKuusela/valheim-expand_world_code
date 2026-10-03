@@ -69,8 +69,9 @@ public class ForecastClass
   {
     if (!Enum.TryParse<Heightmap.Biome>(biome, true, out var b))
       return "Invalid biome";
+    var bs = new BiomeSector(null, b);
     var env = EnvMan.instance;
-    var setup = env.GetAvailableEnvironments(b);
+    var setup = env.GetAvailableEnvironments(bs);
     if (setup == null)
       return "No weather";
     UnityEngine.Random.State state = UnityEngine.Random.state;
