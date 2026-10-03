@@ -88,7 +88,7 @@ public class CodeLoading
     Log.Info($"Reloading code functions ({Functions.Count} entries).");
   }
 
-  public static string? Execute(string name) => Execute(name, []);
+  public static string? Execute(string name) => Execute(name, Array.Empty<string>());
   public static string? Execute(string name, string arg) => Execute(name, arg.Split('_'));
 
   private static string? Execute(string name, string[] args)
